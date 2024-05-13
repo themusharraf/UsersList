@@ -8,7 +8,5 @@ class People(models.Model):
     status = models.CharField(max_length=225)
     image = models.ImageField(upload_to='images')
 
-
     def __str__(self):
         return self.full_name
-
