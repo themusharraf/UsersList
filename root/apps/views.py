@@ -2,10 +2,6 @@ from django.views.generic import TemplateView, ListView, DeleteView
 from .models import People
 
 
-class Home(TemplateView):
-    template_name = 'home.html'
-
-
 class UserList(ListView):
     model = People
     context_object_name = 'users'

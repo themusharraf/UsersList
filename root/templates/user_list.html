@@ -234,8 +234,9 @@
                                            data-original-title="view"><i class="far fa-eye"></i></a></li>
                                     <li><a href="#" class="text-info" data-toggle="tooltip" title
                                            data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a></li>
-                                    <li><a href="#" class="text-danger" data-toggle="tooltip" title
-                                           data-original-title="Delete"><i class="far fa-trash-alt">{% url 'delete' pk=user.id %}</i></a>
+                                    <li><a href="{% url 'delete' pk=user.id %}" class="text-danger"
+                                           data-toggle="tooltip" title
+                                           data-original-title="Delete"><i class="far fa-trash-alt"></i></a>
                                     </li>
                                 </ul>
                             </td>
